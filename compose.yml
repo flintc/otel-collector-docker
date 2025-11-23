@@ -1,10 +1,11 @@
 services:
   otel-collector:
+    network_mode: "host" 
     build:
       context: .
       dockerfile: Dockerfile
     container_name: otel-collector
     command: ["--config=/etc/otelcol/config.yaml"]
-    ports:
-      - "4317:4317"
-      - "4318:4318"
+    # ports:
+    #   - "4317:4317"
+    #   - "4318:4318"
