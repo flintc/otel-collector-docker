@@ -1,5 +1,5 @@
 FROM otel/opentelemetry-collector-contrib
 
-COPY config.yml /etc/otelcol/config.yml
+COPY config.yaml /etc/otelcol/config.yaml
 
-CMD ["--config", "/etc/otelcol/config.yml"]
+CMD ["--config", "/etc/otelcol/config.yaml"]
